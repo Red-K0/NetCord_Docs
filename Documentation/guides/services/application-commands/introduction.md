@@ -1,16 +1,8 @@
----
+﻿---
 uid: application-commands
 ---
 
 # Introduction
-
-> [!IMPORTANT]
-> Please note that names of:
-> - slash commands
-> - sub slash commands
-> - slash command parameters
-> 
-> **must** be lowercase.
 
 ## [.NET Generic Host](#tab/generic-host)
 
@@ -37,6 +29,17 @@ Now, we should send the commands to Discord, to make them usable. Add the follow
 [!code-cs[Program.cs](Introduction/Program.cs)]
 
 ***
+
+> [!NOTE]
+> If you don't see the commands in Discord, try refreshing the Discord client using `Ctrl + R` on PC or `⌘ + R` on Mac.
+
+> [!IMPORTANT]
+> Please note that names of:
+> - slash commands
+> - sub slash commands
+> - slash command parameters
+> 
+> **must** be lowercase.
 
 ### Example Modules
 
