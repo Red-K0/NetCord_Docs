@@ -66,6 +66,8 @@ var host = builder.Build()
 await host.RunAsync();
 ```
 
+Of course, you can also use the bare-bones approach.
+
 ### Module-based Command Example
 
 Moreover, you can use a module-based approach. Here's an example of a `/greet` command that greets a specified user:
