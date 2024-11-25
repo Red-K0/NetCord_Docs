@@ -95,7 +95,8 @@ article img {
   border-radius: 10px;
 }
 
-.tabGroup > section > pre:last-of-type {
+.tabGroup > section > pre:last-child,
+.alert > :last-child {
   margin-bottom: 0;
 }
 
