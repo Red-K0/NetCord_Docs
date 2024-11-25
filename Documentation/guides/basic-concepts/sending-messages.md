@@ -165,6 +165,9 @@ Quoted-printable encoding is another supported format. The following example cre
 
 #### Google Cloud Attachments
 
+> [!WARNING]
+> Discord does not offer any stability guarantees for this feature so it can break without notice.
+
 Discord supports uploading attachments directly to Google Cloud Platform. This example creates an attachment uploaded directly to Google Cloud Platform with the content "Hello, Google!".
 
 [!code-cs[Google Cloud attachment](SendingMessages/Program.cs#L135-L144)]
