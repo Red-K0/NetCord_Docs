@@ -36,7 +36,7 @@ static void Callbacks()
     callback = InteractionCallback.Modal(new ModalProperties("intro", "Introduce Yourself")
         .AddComponents(
             new TextInputProperties("name", TextInputStyle.Short, "First Name"),
-            new TextInputProperties("bio", TextInputStyle.Paragraph, "Your Bio"))); 
+            new TextInputProperties("bio", TextInputStyle.Paragraph, "Your Bio")));
 
     callback = InteractionCallback.Modal(new("intro", "Introduce Yourself")
     {
