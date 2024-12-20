@@ -222,7 +222,7 @@ public abstract class WebSocketClient : IDisposable
         var connection = connectionState.Connection;
 
         var description = connection.CloseStatusDescription;
-        InvokeLog(LogMessage.Info("Disconnected", string.IsNullOrEmpty(description) ? null : (description.EndsWith('.') ? description[..^1] : description)));
+        InvokeLog(LogMessage.Info("Disconnected", description is [.., '.'] ? description[..^1] : description));
 
         var reconnect = Reconnect((WebSocketCloseStatus?)connection.CloseStatus, description);
 

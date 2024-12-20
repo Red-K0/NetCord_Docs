@@ -121,7 +121,7 @@ public readonly struct Timestamp : IEquatable<Timestamp>, ISpanFormattable, ISpa
 
     public static bool TryParse(ReadOnlySpan<char> value, [MaybeNullWhen(false)] out Timestamp timestamp)
     {
-        if (value.StartsWith("<t:") && value.EndsWith(">"))
+        if (value is ['<', 't', ':', .., '>'])
         {
             const long MinTimestamp = -62135596800;
             const long MaxTimestamp = 253402300799;
