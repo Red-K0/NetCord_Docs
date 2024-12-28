@@ -24,11 +24,11 @@ var host = builder.Build();
 
 host.AddModules(typeof(Program).Assembly);
 
-host.AddSlashCommand<SlashCommandContext>(
-    name: "data",
-    description: "Shows the data!",
-    (IDataProvider dataProvider, SlashCommandContext context, int count) => string.Join(' ', dataProvider.GetData()
-                                                                                                         .Take(count)));
+host.AddSlashCommand(
+        name: "data",
+        description: "Shows the data!",
+        (IDataProvider dataProvider, SlashCommandContext context, int count) => string.Join(' ', dataProvider.GetData()
+                                                                                                             .Take(count)));
 
 host.UseGatewayEventHandlers();
 

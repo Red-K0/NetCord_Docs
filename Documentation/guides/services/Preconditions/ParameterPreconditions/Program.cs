@@ -19,7 +19,7 @@ builder.Services
 
 var host = builder.Build();
 
-host.AddCommand<CommandContext>(
+host.AddCommand(
         aliases: ["bye"],
         ([MustContain<CommandContext>("bye")] string text) => text);
 
