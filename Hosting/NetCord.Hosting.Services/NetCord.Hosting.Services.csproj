@@ -24,8 +24,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="../../Resources/NuGet/README.md" Pack="true" PackagePath=""></None>
-    <None Include="../../Resources/Logo/png/SmallSquare.png" Pack="true" PackagePath="" />
+    <None Include="..\..\Resources\NuGet\README.md" Pack="true" PackagePath=""></None>
+    <None Include="..\..\Resources\Logo\png\SmallSquare.png" Pack="true" PackagePath="" />
   </ItemGroup>
 
   <ItemGroup>
@@ -34,7 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="../NetCord.Hosting/GlobalUsings.cs" />
+    <Compile Include="..\NetCord.Hosting\GlobalUsings.cs" />
   </ItemGroup>
 
 </Project>

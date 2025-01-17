@@ -23,8 +23,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="../../Resources/NuGet/README.md" Pack="true" PackagePath=""></None>
-    <None Include="../../Resources/Logo/png/SmallSquare.png" Pack="true" PackagePath="" />
+    <None Include="..\..\Resources\NuGet\README.md" Pack="true" PackagePath=""></None>
+    <None Include="..\..\Resources\Logo\png\SmallSquare.png" Pack="true" PackagePath="" />
   </ItemGroup>
 
   <ItemGroup>
@@ -39,10 +39,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="../../NetCord.Services/Helpers/ServiceProviderHelper.cs" />
-    <Compile Include="../../NetCord.Services/Helpers/ParameterHelper.cs" />
-    <Compile Include="../../NetCord/Gateway/GatewayClientConfigurationFactory.cs" />
-    <Compile Include="../../NetCord/Gateway/ShardedGatewayClientConfigurationFactory.cs" />
+    <Compile Include="..\..\NetCord.Services\Helpers\ServiceProviderHelper.cs" />
+    <Compile Include="..\..\NetCord.Services\Helpers\ParameterHelper.cs" />
+    <Compile Include="..\..\NetCord\Gateway\GatewayClientConfigurationFactory.cs" />
+    <Compile Include="..\..\NetCord\Gateway\ShardedGatewayClientConfigurationFactory.cs" />
   </ItemGroup>
 
 </Project>
