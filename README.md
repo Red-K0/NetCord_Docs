@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-    ⭐ If you like this project, please consider giving it a star! ⭐
+    ⭐ Found NetCord helpful or inspiring? Show your support by giving it a star! ⭐
 </p>
 
 # Table of Contents
