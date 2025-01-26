@@ -3,13 +3,12 @@
 using NetCord.Hosting.Gateway;
 using NetCord.Hosting.Services;
 using NetCord.Hosting.Services.Commands;
-using NetCord.Services.Commands;
 
 var builder = Host.CreateApplicationBuilder(args);
 
 builder.Services
     .AddDiscordGateway()
-    .AddCommands<CommandContext>();
+    .AddCommands();
 
 var host = builder.Build();
 
