@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-    ⭐ If you like this project, please consider giving it a star! ⭐
+    ⭐ Found NetCord helpful or inspiring? Show your support by giving it a star! ⭐
 </p>
 
 # Table of Contents
@@ -57,21 +57,23 @@ The following example sets up a bot with a minimal API-style approach for the `/
 ```cs
 var builder = Host.CreateDefaultBuilder(args)
     .UseDiscordGateway()
-    .UseApplicationCommands<SlashCommandInteraction, SlashCommandContext>();
+    .UseApplicationCommands();
 
 var host = builder.Build()
-    .AddSlashCommand<SlashCommandContext>("square", "Square!", (int a) => $"{a}² = {a * a}")
+    .AddSlashCommand("square", "Square!", (int a) => $"{a}² = {a * a}")
     .UseGatewayEventHandlers();
 
 await host.RunAsync();
 ```
+
+Of course, you can also use the bare-bones approach.
 
 ### Module-based Command Example
 
 Moreover, you can use a module-based approach. Here's an example of a `/greet` command that greets a specified user:
 
 ```cs
-public class GreetingModule : ApplicationCommandModule<SlashCommandContext>
+public class GreetingModule : ApplicationCommandModule<ApplicationCommandContext>
 {
     [SlashCommand("greet", "Greet someone!")]
     public string Greet(User user) => $"{Context.User} greets {user}!";

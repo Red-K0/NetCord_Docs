@@ -4,8 +4,19 @@
   <section class="buttons">
     <a href="guides/getting-started/installation.html" class="button primary-button">Get Started</a>
     <a href="guides/getting-started/installation.html" class="button secondary-button">Guides</a>
-    <a href="docs/" class="button secondary-button">Docs</a>
+    <a href="docs/" class="button secondary-button">API Docs</a>
   </section>
+</div>
+
+<div class="code-example-section">
+  <h3 class="section-title">Build a Discord Bot in Minutes!</h3>
+  <h4 class="section-text">
+    Quickly add a <code>/square</code> command to calculate squares with just a few lines of C#.
+  </h4>
+  <div class="code-example">
+    <pre><code class="lang-cs" name="Program.cs">{{>partials/example}}</code></pre>
+  </div>
+  <h4 class="section-text">Start building now with NetCord!</h4>
 </div>
 
 <div class="features-section">
